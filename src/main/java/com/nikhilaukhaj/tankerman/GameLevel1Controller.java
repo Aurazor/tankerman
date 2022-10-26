@@ -34,7 +34,6 @@ public class GameLevel1Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-
     }
 
     public void setStage(Stage stage){
