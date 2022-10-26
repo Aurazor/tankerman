@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #000000; -fx-border-color: #ec6f00; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikhilaukhaj.tankerman.LoginController">
+   <children>
+      <Label layoutX="82.0" layoutY="179.0" text="Username:" textFill="#ec6f00">
+         <font>
+            <Font name="Jokerman" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="235.0" text="Password:" textFill="#ec6f00">
+         <font>
+            <Font name="Jokerman" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="239.0" fitWidth="524.0" layoutX="20.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/com/nikhilaukhaj/tankerman/fonts" />
+         </image>
+      </ImageView>
+      <Label layoutX="257.0" layoutY="26.0" text="TANKERMAN" textFill="#ec6f00">
+         <font>
+            <Font name="Jokerman" size="44.0" />
+         </font>
+      </Label>
+      <TextField fx:id="label_user" layoutX="235.0" layoutY="190.0" prefHeight="35.0" prefWidth="502.0" promptText="enter username">
+         <font>
+            <Font name="Jokerman" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="label_pass" layoutX="235.0" layoutY="239.0" prefHeight="35.0" prefWidth="502.0" promptText="enter password">
+         <font>
+            <Font name="Jokerman" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnLogin" layoutX="556.0" layoutY="300.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #ec6f00;" text="Login" textFill="#0a0a0a">
+         <font>
+            <Font name="Jokerman" size="31.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
