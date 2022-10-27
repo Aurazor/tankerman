@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-/*Button{*/
-/*    -fx-font-family: 'Fredoka One', cursive;*/
-/*}*/
+#level1_pane{
+    -fx-background-image: url("assets/backgrounds/game_background_4.png");
+    -fx-background-size:100% 100% ;
 
-/*Label{*/
-/*    -fx-font-family: 'Fredoka One', cursive;*/
-/*}*/
+}

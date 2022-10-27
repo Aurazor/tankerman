@@ -13,16 +13,21 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
 
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Level1.fxml"));
+        Parent root = loader.load();
 
-        primaryStage.setTitle("Login");
-        Scene loginScene = new Scene(root);
-
+        Scene scene = new Scene(root);
         String css = this.getClass().getResource("application.css").toExternalForm();
-        loginScene.getStylesheets().add(css);
+        scene.getStylesheets().add(css);
 
-        primaryStage.setScene(loginScene);
+        primaryStage.setTitle("Level 1");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
+
+        Level1Controller controller = loader.getController();
+        controller.setStage(primaryStage);
     }
 
 
