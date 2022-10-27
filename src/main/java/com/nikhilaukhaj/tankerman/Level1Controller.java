@@ -52,6 +52,24 @@ public class Level1Controller implements Initializable {
         playerDirection = 'L';
         shooting = false;
         score = 0;
+
+        timer2 = new Timer();
+        TimerTask timer2Task = new TimerTask() {
+            @Override
+            public void run() {
+                moveEnemy(enemy1);
+                moveEnemy(enemy2);
+                moveEnemy(enemy3);
+                moveEnemy(enemy4);
+                moveEnemy(enemy5);
+                moveEnemy(enemy6);
+            }
+        };
+        timer2.scheduleAtFixedRate(timer2Task, 10, 10);
+    }
+
+    public void moveEnemy(ImageView img1){
+        img1.setX(img1.getX() + 1);
     }
 
     public void setStage(Stage stage){
