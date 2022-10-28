@@ -82,17 +82,16 @@ public class Level1Controller implements Initializable {
                 switch (keyEvent.getCode()){
                     case UP:
                         //warrior up
-                        changeWarriorDirection("images/warrior_up.png",img_tankerman.getX(),img_tankerman.getY()-10,'U');
+                        changeWarriorDirection("assets/characters/warrior_up_x.png",img_tankerman.getX(),img_tankerman.getY()-10,'U');
                         break;
                     case RIGHT:
-                        changeWarriorDirection("images/warrior_right.png",img_tankerman.getX()+10,img_tankerman.getY(),'R');
+                        changeWarriorDirection("assets/characters/warrior_right_x.png",img_tankerman.getX()+10,img_tankerman.getY(),'R');
                         break;
                     case DOWN:
-                        changeWarriorDirection("images/warrior_down.png",img_tankerman.getX(),img_tankerman.getY()+10,'D');
+                        changeWarriorDirection("assets/characters/warrior_down_x.png",img_tankerman.getX(),img_tankerman.getY()+10,'D');
                         break;
                     case LEFT:
-                        changeWarriorDirection("images/warrior_left.png",img_tankerman.getX()-10,img_tankerman.getY(),'L');
-
+                        changeWarriorDirection("assets/characters/warrior_left_x.png",img_tankerman.getX()-10,img_tankerman.getY(),'L');
                         break;
                     case SPACE:
                         //shoot bullet
