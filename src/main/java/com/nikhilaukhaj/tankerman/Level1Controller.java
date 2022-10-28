@@ -150,6 +150,7 @@ public class Level1Controller implements Initializable {
                     case 'R' -> imageView.setX(imageView.getX() + 5);
                     case 'D' -> imageView.setY(imageView.getY() + 5);
                     case 'L' -> imageView.setX(imageView.getX() - 5);
+                    //hello
                 }
 
 
